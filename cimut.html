@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIMSAM CONG - Landing Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .nav-blur {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        .dimsum-bg {
+            background-image: url(Dimsum\ Mentai\ \(16\ pcs\)\ by\ Aburi\ Kitchen.jfif);
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <nav class="fixed w-full z-50 nav-blur p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-8 md:px-8">
+            <div class="text-blue-1000 text-2xl font-bold tracking-wider">DIMSAM CONG</div>
+            <div class="hidden md:flex space-x-6 text-blue-1000 font-medium">
+                <a href="#home" class="hover:text-blue-500 transition duration-300">Home</a>
+                <a href="#about" class="hover:text-blue-500 transition duration-300">About Us</a>
+                <a href="#produk" class="hover:text-blue-500 transition duration-300">Produk</a>
+                <a href="#contact" class="hover:text-blue-500 transition duration-300">Contact Us</a>
+                <a href="#rating" class="hover:text-blue-500 transition duration-300">Rating</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex flex-col md:flex-row relative pt-20 md:pt-0">
+        <div class="w-full md:w-1/2 gradient-bg flex flex-col justify-center px-16 md:px-16 py-12 text-white">
+            <div class="flex items-center space-x-4 mb-6">
+                <div class="w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center font-bold text-xl shadow-lg border-2 border-white">
+                    <img src="logggo-removebg-preview.png" alt="logo-home">
+                </div>
+                <div>
+                    <span class="text-sm uppercase tracking-widest text-blue-300 font-semibold">Halal & Lezat</span>
+                    <h3 class="text-4xl md:text-5xl font-extrabold tracking-tight">DIMSAM CONG</h3>
+                </div>
+            </div>
+            
+            <p class="text-xl md:text-2xl font-semibold text-blue-400 mb-4">
+                Rasakan kelembutan dalam setiap gigitan!
+            </p>
+            
+            <p class="text-gray-300 mb-6 leading-relaxed">
+                Dibuat dengan bahan-bahan premium pilihan dan bumbu rempah autentik. Bersih, higienis, dan 100% halal untuk menemani waktu santai Anda bersama keluarga.
+            </p>
+
+            <div class="space-y-3 mb-8">
+                <p class="flex items-center text-gray-300">
+                    <span class="mr-3 text-blue-400 font-bold">🕒</span> Waktu Pelayanan: Setiap Hari, 09.00 - 21.00 WIB
+                </p>
+                <div class="inline-block bg-green-600 text-white font-bold py-1 px-4 rounded-full text-xs tracking-wider">
+                    ✓ BERSERTIFIKAT HALAL
+                </div>
+            </div>
+
+            <div>
+                <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-xl shadow-lg transition duration-300">
+                    Pesan Sekarang
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/2 dimsum-bg h-[40vh] md:h-auto"></div>
+    </section>
+
+    <section id="about" class="min-h-screen gradient-bg flex items-center py-24 px-6 md:px-16">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="w-full md:w-1/2 text-white">
+                <h2 class="text-4xl font-bold mb-6 border-l-4 border-blue-400 pl-4">Keunggulan Dimsam Cong</h2>
+                <ul class="space-y-4 text-gray-300 text-lg leading-relaxed">
+                    <li><strong class="text-blue-400">✓ 100% Halal & Higienis:</strong> Diproses dengan standar kebersihan tertinggi dan bahan pilihan.</li>
+                    <li><strong class="text-blue-400">✓ Daging Ayam Pilihan:</strong> Menghasilkan tekstur yang padat dan juicy di setiap gigitan.</li>
+                    <li><strong class="text-blue-400">✓ Saus & Topping Lezat:</strong> Kombinasi saus mentai <strong>cramy</strong> dan keju <strong>melting</strong>.</li>
+                    <li><strong class="text-blue-400">✓ Harga Terjangkau:</strong> Kualitas premium dengan harga bersahabat di kantong.</li>
+                </ul>
+            </div>
+
+            <div class="w-full md:w-1/2 bg-white/10 p-8 rounded-3xl backdrop-blur-md border border-white/20 text-white shadow-2xl">
+                <h3 class="text-2xl font-bold mb-4 text-blue-400">Lokasi Outlet Kami</h3>
+                <p class="text-gray-300 mb-6">Ingin menikmati dimsam hangat langsung di tempat? Kunjungi kami di:</p>
+                <address class="not-italic text-gray-300 space-y-3">
+                    <p class="flex items-start">
+                        <span class="mr-3 text-blue-400 font-bold">📍</span> 
+                        Jl. SUMATRA, 88
+                    </p>
+                    <p class="flex items-start">
+                        <span class="mr-3 text-blue-400 font-bold">📞</span> 
+                        Customer Service / Hotline: 085176994015
+                    </p>
+                </address>
+                <div class="mt-8">
+                    <a href="https://maps.app.goo.gl/vyQ8MJZ1wCx3b8A38" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300 text-sm">
+                        Lihat di Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produk" class="min-h-screen py-24 px-6 md:px-16 bg-white">
+        <div class="max-w-6xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-3 tracking-tight">Varian Produk Kami</h2>
+            <p class="text-gray-500 text-lg">Pilih menu favorit Anda yang tersedia dalam ukuran Small dan Large.</p>
+        </div>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+            
+            <div class="gradient-card text-white rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-2xl transition hover:shadow-blue-500/10">
+                <div class="w-full md:w-2/5">
+                    <img src="Dimsum Mentai Personal Size (6 pcs) - Aburi Kitchen.jfif" alt="Siomay Mentai" class="rounded-2xl shadow-lg w-full h-52 object-cover border border-white/20">
+                </div>
+                <div class="w-full md:w-3/5 flex flex-col justify-between h-full">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Siomay Mentai</h3>
+                        <p class="text-blue-100 text-sm mb-4 leading-relaxed">
+                            Siomay ayam dengan balutan saus mentai gurih dan dengan tambahan nori diatas saus.
+                        </p>
+                    </div>
+                    <div class="space-y-2 text-sm text-gray-200">
+                        <p class="font-semibold text-blue-400 uppercase tracking-widest text-xs">Pilihan Ukuran:</p>
+                        <div class="flex justify-between items-center border-b border-blue-500/20 pb-2">
+                            <span>Small (6 Biji)</span>
+                            <span class="text-green-300 font-extrabold">Rp 22.000</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Large (16 Biji)</span>
+                            <span class="text-green-300 font-extrabold">Rp 56.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gradient-card text-white rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-2xl transition hover:shadow-blue-500/10">
+                <div class="w-full md:w-2/5">
+                    <img src="DIMSUM GORENG KEJU LUMER FROZEN.jfif" alt="Keju Goreng" class="rounded-2xl shadow-lg w-full h-52 object-cover border border-white/20">
+                </div>
+                <div class="w-full md:w-3/5 flex flex-col justify-between h-full">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Keju Goreng</h3>
+                        <p class="text-blue-100 text-sm mb-4 leading-relaxed">
+                            Dimsum ayam gurih digoreng hingga renyah dengan isian lelehan keju mozarella di dalamnya dan tambahan saus chili oil.
+                        </p>
+                    </div>
+                    <div class="space-y-2 text-sm text-gray-200">
+                        <p class="font-semibold text-blue-400 uppercase tracking-widest text-xs">Pilihan Ukuran:</p>
+                        <div class="flex justify-between items-center border-b border-blue-500/20 pb-2">
+                            <span>Small (6 Biji)</span>
+                            <span class="text-green-300 font-extrabold">Rp 20.000</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Large (16 Biji)</span>
+                            <span class="text-green-300 font-extrabold">Rp 52.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="min-h-screen py-24 px-6 md:px-16 bg-gray-50 flex items-center justify-center">
+        <div class="w-full max-w-2xl bg-white shadow-2xl rounded-3xl p-8 md:p-12 border border-gray-100">
+            
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-extrabold text-gray-900 mb-2">Formulir Pemesanan</h2>
+                <p class="text-gray-500 text-sm">Isi data pesananmu di bawah, kami akan menghubungimu via WhatsApp.</p>
+            </div>
+
+            <div class="gradient-card p-6 md:p-8 rounded-2xl text-white shadow-lg space-y-6">
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-blue-200 mb-2 font-semibold">Nama Pelanggan</label>
+                    <input type="text" id="orderNama" class="w-full px-4 py-3 rounded-xl bg-gray-50 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-300" placeholder="Masukkan nama Anda">
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-blue-200 mb-2 font-semibold">Pesanan</label>
+                    <select id="orderVarian" class="w-full px-4 py-3 rounded-xl bg-gray-50 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-300">
+                        <option value="Siomay Mentai Small (Rp 18.000)">Siomay Mentai - Small (Rp 18.000)</option>
+                        <option value="Siomay Mentai Large (Rp 48.000)">Siomay Mentai - Large (Rp 48.000)</option>
+                        <option value="Keju Goreng Small (Rp 18.000)">Keju Goreng - Small (Rp 18.000)</option>
+                        <option value="Keju Goreng Large (Rp 48.000)">Keju Goreng - Large (Rp 48.000)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-blue-200 mb-2 font-semibold">Jumlah (Pack)</label>
+                    <input type="number" id="orderJumlah" class="w-full px-4 py-3 rounded-xl bg-gray-50 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-300" placeholder="Masukkan angka..." min="1" value="1">
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-blue-200 mb-2 font-semibold">Alamat</label>
+                    <textarea id="orderAlamat" class="w-full px-4 py-3 rounded-xl bg-gray-50 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-300" rows="3" placeholder="Masukkan alamat lengkap tujuan pengiriman"></textarea>
+                </div>
+
+                <button onclick="kirimPesanan()" class="w-full bg-green-500 hover:bg-green-600 text-white font-extrabold py-4 rounded-xl shadow-lg transition transform hover:-translate-y-0.5 flex items-center justify-center space-x-3">
+                    <span>Pesan Sekarang</span>
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.199.297-.768.967-.942 1.165-.173.199-.347.224-.644.075-.297-.15-1.255-.463-2.392-1.478-.885-.79-1.482-1.765-1.656-2.063-.173-.298-.018-.459.13-.607.133-.133.298-.347.446-.522.149-.174.199-.298.298-.497.099-.199-.05-.372-.124-.521-.074-.149-.672-1.625-.921-2.227-.238-.588-.479-.508-.67-.516-.172-.007-.37-.007-.568-.007-.199 0-.522.075-.796.372-.274.298-1.045 1.02-1.045 2.486 0 1.466 1.07 2.875 1.22 3.074.149.199 2.1 3.226 5.093 4.516.713.307 1.275.488 1.711.626.721.229 1.379.197 1.898.127.579-.08 1.758-.719 2.007-1.412.248-.693.248-1.288.174-1.412-.074-.124-.272-.198-.569-.347m-4.636 4.618h-.005c-1.314 0-2.605-.353-3.731-1.018l-.268-.159-2.783.729.743-2.709-.173-.284c-.739-1.21-1.13-2.618-1.13-4.045 0-4.223 3.428-7.653 7.655-7.653 2.043 0 3.961.796 5.405 2.242 1.444 1.445 2.238 3.363 2.236 5.405-.003 4.223-3.431 7.653-7.654 7.653zm-.13-16.148c-4.708 0-8.528 3.82-8.528 8.529 0 1.511.391 2.981 1.134 4.288L3.2 21.057l4.499-1.181a8.498 8.498 0 0 0 4.093 1.042h.005c4.707 0 8.527-3.82 8.528-8.53.001-2.278-.887-4.418-2.498-6.028-1.611-1.61-3.753-2.499-6.029-2.503z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="rating" class="min-h-screen py-24 px-6 md:px-16 bg-blue-1000 flex flex-col items-center">
+        <div class="max-w-6xl w-full text-center mb-16">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-3">Statistik & Penilaian</h2>
+            <p class="text-gray-500">Lihat total pengunjung, jumlah produk terjual, dan berikan penilaian Anda.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 w-full max-w-5xl mb-12">
+            <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 text-center flex flex-col justify-center">
+                <span class="text-4xl font-extrabold text-blue-600 mb-1" id="visitorCounter">0</span>
+                <span class="text-xs text-gray-400 font-bold tracking-widest">TOTAL PENGUNJUNG</span>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 text-center flex flex-col justify-center">
+                <span class="text-3xl font-extrabold text-blue-500 mb-1" id="salesSM">0</span>
+                <span class="text-xs text-gray-400 font-bold tracking-widest">Siomay Mentai Small</span>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 text-center flex flex-col justify-center">
+                <span class="text-3xl font-extrabold text-blue-500 mb-1" id="salesML">0</span>
+                <span class="text-xs text-gray-400 font-bold tracking-widest">Siomay Mentai Large</span>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 text-center flex flex-col justify-center">
+                <span class="text-3xl font-extrabold text-blue-500 mb-1" id="salesKS">0</span>
+                <span class="text-xs text-gray-400 font-bold tracking-widest">Keju Goreng Small</span>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 text-center flex flex-col justify-center">
+                <span class="text-3xl font-extrabold text-blue-500 mb-1" id="salesKL">0</span>
+                <span class="text-xs text-gray-400 font-bold tracking-widest">Keju Goreng Large</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-5xl">
+            <div class="bg-white p-8 rounded-3xl shadow-2xl border border-gray-100 flex flex-col justify-between h-[420px]">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-5">Beri Penilaian Anda</h3>
+                    <form id="ratingForm" class="space-y-4">
+                        <div>
+                            <label class="block text-xs uppercase text-gray-500 font-bold mb-1">Nama / Anonim</label>
+                            <input type="text" id="ratingName" class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Tuliskan nama Anda">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase text-gray-500 font-bold mb-1">Skor Bintang</label>
+                            <select id="ratingScore" class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="5">⭐⭐⭐⭐⭐ (5 - Sangat Puas)</option>
+                                <option value="4">⭐⭐⭐⭐ (4 - Puas)</option>
+                                <option value="3">⭐⭐⭐ (3 - Cukup)</option>
+                                <option value="2">⭐⭐ (2 - Kurang)</option>
+                                <option value="1">⭐ (1 - Sangat Kurang)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase text-gray-500 font-bold mb-1">Komentar</label>
+                            <textarea id="ratingText" class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500" rows="2" placeholder="Bagaimana menurut Anda produk kami?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-4 rounded-lg shadow transition">
+                            Kirim Rating
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="mt-4 border-t pt-4 h-[110px] overflow-y-auto">
+                    <h4 class="text-sm font-bold text-gray-800 mb-2">Rating Terakhir:</h4>
+                    <div id="ratingsContainer" class="space-y-2 text-sm text-gray-600"></div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-2xl border border-gray-100 flex flex-col justify-center h-[420px]">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Grafik Penjualan</h3>
+                <div class="w-full max-w-md mx-auto h-[280px]">
+                    <canvas id="salesChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white text-center py-8 text-sm border-t border-gray-800">
+        &copy; 2026 DIMSAM CONG. All Rights Reserved.
+    </footer>
+
+    <script>
+        // 1. Visitor Counter
+        let visitors = parseInt(localStorage.getItem('dimsam_visitors') || '0');
+        visitors += 1;
+        localStorage.setItem('dimsam_visitors', visitors);
+        document.getElementById('visitorCounter').textContent = visitors;
+
+        // 2. Sales Data Initialization (default starts from 0)
+        let sales = JSON.parse(localStorage.getItem('dimsam_sales') || JSON.stringify({
+            'Siomay Mentai Small': 0,
+            'Siomay Mentai Large': 0,
+            'Keju Goreng Small': 0,
+            'Keju Goreng Large': 0
+        }));
+
+        function updateSalesDisplay() {
+            document.getElementById('salesSM').textContent = sales['Siomay Mentai Small'];
+            document.getElementById('salesML').textContent = sales['Siomay Mentai Large'];
+            document.getElementById('salesKS').textContent = sales['Keju Goreng Small'];
+            document.getElementById('salesKL').textContent = sales['Keju Goreng Large'];
+        }
+        updateSalesDisplay();
+
+        // 3. Sales Chart Setup
+        const ctx = document.getElementById('salesChart').getContext('2d');
+        let salesChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Siomay Mentai Small', 'Siomay Mentai Large', 'Keju Goreng Small', 'Keju Goreng Large'],
+                datasets: [{
+                    label: 'Jumlah Produk Terjual',
+                    data: [
+                        sales['Siomay Mentai Small'],
+                        sales['Siomay Mentai Large'],
+                        sales['Keju Goreng Small'],
+                        sales['Keju Goreng Large']
+                    ],
+                    backgroundColor: '#3b82f6',
+                    borderColor: '#1d4ed8',
+                    borderWidth: 1,
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        ticks: {
+                            stepSize: 10
+                        }
+                    }
+                }
+            }
+        });
+
+        function updateChart() {
+            salesChart.data.datasets[0].data = [
+                sales['Siomay Mentai Small'],
+                sales['Siomay Mentai Large'],
+                sales['Keju Goreng Small'],
+                sales['Keju Goreng Large']
+            ];
+            salesChart.update();
+        }
+
+        // 4. Send Order Function & Increment Sales
+        function kirimPesanan() {
+            const nama = document.getElementById('orderNama').value;
+            const varian = document.getElementById('orderVarian').value;
+            const jumlah = document.getElementById('orderJumlah').value;
+            const alamat = document.getElementById('orderAlamat').value;
+
+            if (!nama || !jumlah || !alamat) {
+                alert('Harap lengkapi semua data formulir terlebih dahulu!');
+                return;
+            }
+
+            // Update local sales data
+            if (varian.includes('Siomay Mentai Small')) {
+                sales['Siomay Mentai Small'] += parseInt(jumlah);
+            } else if (varian.includes('Siomay Mentai Large')) {
+                sales['Siomay Mentai Large'] += parseInt(jumlah);
+            } else if (varian.includes('Keju Goreng Small')) {
+                sales['Keju Goreng Small'] += parseInt(jumlah);
+            } else if (varian.includes('Keju Goreng Large')) {
+                sales['Keju Goreng Large'] += parseInt(jumlah);
+            }
+
+            localStorage.setItem('dimsam_sales', JSON.stringify(sales));
+            updateSalesDisplay();
+            updateChart();
+
+            // Format message & generate WhatsApp link
+            const nomorWhatsApp = '6285176994015';
+            const message = `Halo Dimsam Cong, saya ingin memesan:\n\nNama: ${nama}\nPesanan: ${jumlah} pack - ${varian}\nAlamat Pengiriman: ${alamat}`;
+            const encodedMessage = encodeURIComponent(message);
+            const waUrl = `https://wa.me/${nomorWhatsApp}?text=${encodedMessage}`;
+            
+            // Open WA link
+            window.open(waUrl, '_blank');
+        }
+
+        // 5. Ratings Handling
+        let ratings = JSON.parse(localStorage.getItem('dimsam_ratings') || '[]');
+
+        function renderRatings() {
+            const container = document.getElementById('ratingsContainer');
+            container.innerHTML = '';
+            ratings.slice(-4).reverse().forEach(r => {
+                const div = document.createElement('div');
+                div.className = "bg-gray-50 p-2 rounded border border-gray-200 text-xs";
+                div.innerHTML = `<strong>${r.name}</strong> (${'⭐'.repeat(r.score)})<br><span class="text-gray-500 italic">"${r.text}"</span>`;
+                container.appendChild(div);
+            });
+        }
+        renderRatings();
+
+        document.getElementById('ratingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('ratingName').value || 'Anonim';
+            const score = document.getElementById('ratingScore').value;
+            const text = document.getElementById('ratingText').value;
+
+            if (!text) {
+                alert('Silakan tuliskan ulasan/komentar Anda.');
+                return;
+            }
+
+            ratings.push({ name, score, text });
+            localStorage.setItem('dimsam_ratings', JSON.stringify(ratings));
+
+            renderRatings();
+            document.getElementById('ratingName').value = '';
+            document.getElementById('ratingText').value = '';
+            alert('Terima kasih atas penilaian Anda!');
+        });
+    </script>
+
+</body>
+</html>
